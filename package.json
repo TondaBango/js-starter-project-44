@@ -5,8 +5,7 @@
   "description": "[![Actions Status](https://github.com/TondaBango/js-starter-project-44/workflows/hexlet-check/badge.svg)](https://github.com/TondaBango/js-starter-project-44/actions)",
   "main": "index.js",
   "bin": {
-  "brain-games": "bin/brain-games.js"
-}
+    "brain-games": "bin/brain-games.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +19,6 @@
     "url": "https://github.com/TondaBango/js-starter-project-44/issues"
   },
   "homepage": "https://github.com/TondaBango/js-starter-project-44#readme"
+  }
   
 }
