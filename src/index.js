@@ -39,6 +39,10 @@ const rulesOfGame = (nameGame) => {
       console.log("What number is missing in the progression?");
       break;
 
+        case "brain-prime":
+      console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+      break;
+
     default:
       console.log("Sorry, something wrong");
       break;
@@ -111,6 +115,10 @@ const question = (nameGame) => {
         );
         break;
 
+      case "brain-prime":
+        console.log(`${"Question:"} ${firstRandomNumber}`);
+      break;
+        
     default:
       console.log("Sorry, something wrong");
       break;
@@ -157,10 +165,26 @@ const correctAnswer = (nameGame) => {
       resultOfCorrectAnswer = hideOfProgressionNumber;
       break;
 
+      case "brain-prime": {
+        const primeFucnction = (firstRandomNumber) => {
+            if (firstRandomNumber > 1) {
+              for (let i = 2; i < firstRandomNumber; i += 1) {
+                if (firstRandomNumber % i === 0) {
+                  return "no";
+                }
+              }
+            }
+            return "yes";
+          };
+          resultOfCorrectAnswer = primeFucnction(firstRandomNumber);
+      }
+      break;
+
       default:
       console.log("Sorry, something wrong");
       break;
-  }
+    }
+    
   return resultOfCorrectAnswer;
 };
 
