@@ -1,3 +1,3 @@
-import runGameWithCounter from "../src/even.js";
+import runGameWithCounter from "../src/index.js";
 
 runGameWithCounter("brain-even");
