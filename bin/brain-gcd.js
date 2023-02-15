@@ -1,3 +1,3 @@
-import runGameWithCounter from "../src/index.js";
+import runGcd from '../src/games/gcd.js';
 
-runGameWithCounter("brain-gcd");
+runGcd();

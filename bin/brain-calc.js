@@ -1,3 +1,3 @@
-import runGameWithCounter from "../src/index.js";
+import runCalc from '../src/games/calc.js';
 
-runGameWithCounter("brain-calc");
+runCalc();

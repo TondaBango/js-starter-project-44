@@ -1,3 +1,3 @@
-import runGameWithCounter from "../src/index.js";
+import runPrime from '../src/games/prime.js';
 
-runGameWithCounter("brain-prime");
+runPrime();

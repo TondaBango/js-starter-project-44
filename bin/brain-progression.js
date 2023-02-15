@@ -1,3 +1,3 @@
-import runGameWithCounter from "../src/index.js";
+import runProgression from '../src/games/progression.js';
 
-runGameWithCounter("brain-progression");
+runProgression();
