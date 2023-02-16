@@ -8,7 +8,7 @@ const maxValue = 100;
 const getGcd = (x, y) => {
   if (y !== 0) {
     const num = x % y;
-    return getGcd(y, num);f
+    return getGcd(y, num);
   } return x;
 };
 
