@@ -5,7 +5,12 @@ const description = 'Find the greatest common divisor of given numbers.';
 const minValue = 1;
 const maxValue = 100;
 
-const getGcd = (x, y) => (x % y === 0 ? y : getGcd(y, x % y));
+const getGcd = (x, y) => {
+  if (y !== 0) {
+    const num = x % y;
+    return getGcd(y, num);f
+  } return x;
+};
 
 const getRound = () => {
   const number1 = getRandomNumber(minValue, maxValue);
