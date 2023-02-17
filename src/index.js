@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-// Ввод кол-ва раундов
+// Константа с максимальным значением раундов
 const roundsCount = 3;
-// Приветсвие игрока
+// Функция запуска игры 
 const run = (getRound, description) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
